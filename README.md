@@ -1,7 +1,28 @@
-# Redux Thunk
+# ReduxThunk Store
 
-- - > Redux Thunk, redux kullanılan projelerde asenkron işlemleri kolaylaştırmayı, bileşen içerisindeki karışıklıklığı azaltmayı ve aynı zamanda bileşen içindeki kompleks yapıyı ayrı bir noktada tanımlamamızı sağlar.
+Bu proje, Redux ve Redux Thunk kütüphanelerini kullanarak yönetilen bir React online mağaza uygulamasıdır. Redux, uygulama genelindeki durumu yönetmek için kullanılan bir durum yönetim kütüphanesi iken Redux Thunk ise Redux eylemlerini yürütmek için kullanılan bir orta katman (middleware) kütüphanesidir. 
 
-- - > Redux'ın temel yapısı, eylemlerin senkron olması üzerine kuruludur. Yani bir eylem tetiklendiğinde, bu eylem bekleme süresi olmadan hemen işlenir ve state güncellenir.
+**Redux Thunk**, asenkron eylemleri (örneğin, bir API isteğini işlemek) Redux eylemlerinin içinde kullanmamızı sağlar. Proje, Redux Thunk'ı kullanarak asenkron veri alışverişini anlama ve yönetme amacıyla oluşturulmuştur.
 
-- - > Asenkron işlemlerle (mesela api varsa projede) uğraşmak istendiğinde, Redux Thunk devreye girer. `Redux Thunk, action oluşturan fonksiyonların basit bir nesne döndürmesi yerine bir fonksiyon döndürmesine izin verir.` Bu sayede asenkron işlemler gerçekleştirilebilir. 
+## Proje Yapısı
+
+Proje, iki farklı Redux reducer'ını içermektedir:
+
+**`1. Product Reducer:`**
+productReducer.js dosyasında yer alan bu reducer, ürünlerle ilgili durumu yönetir. Başlangıç durumu, isLoading, isError ve products alanlarını içeren bir nesnedir. Bu reducer, SET_LOADING, SET_ERROR ve SET_PRODUCT gibi eylemleri işler.
+
+**`2. Basket Reducer:`**
+basketReducer.js dosyasında yer alan bu reducer, sepetle ilgili durumu yönetir. Başlangıç durumu, isLoading, isError ve basket alanlarını içeren bir nesnedir. Bu reducer, ADD, SET_BASKET_LOADING, SET_BASKET_ERROR, SET_BASKET_DATA, UPDATE ve DELETE gibi eylemleri işler.
+
+## Kullanılan Teknolojiler
+
+* React
+* Redux
+* Redux Thunk
+* React Router DOM
+* Axios
+* JSON-SERVER
+* Bootstrap
+
+## Ekran Gifi
+
