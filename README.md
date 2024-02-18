@@ -26,3 +26,5 @@ basketReducer.js dosyasında yer alan bu reducer, sepetle ilgili durumu yönetir
 
 ## Ekran Gifi
 
+![kayt1-ezgif com-video-to-gif-converter](https://github.com/serhatakhan/ReduxThunk-Shop/assets/147662915/5cfdf91c-6c10-400b-a114-ee5981a7685e)
+
